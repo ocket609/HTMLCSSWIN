@@ -65,7 +65,10 @@ img{
 	max-width: 1296px;
 	margin: 0 auto;
 }
-
+*, *::before, *::after{
+	box-sizing:border-box;
+  }
+  
 /*header*/
 .header{
 	background-color: #AA0601;
@@ -75,7 +78,7 @@ img{
 	justify-content: space-between;
 	align-items: center;
 }
-.box-header img{
+.box-header-logo {
 	max-width: 80px;
 }
 .box-header ul{
@@ -124,9 +127,11 @@ img{
 	font-size: 16px;
 	margin-bottom: 32px;
 }
+
 /*footer*/
 .footer{
 	color: #ffff;
+	background: #9F1213;
 	padding-bottom: 32px;
 }
 .box-footer{
@@ -161,11 +166,13 @@ img{
 }
 .btw-footer ul{
 	display: flex;
+	align-items: center;
 }
 .btw-fz{
 	font-family: "Roboto", sans-serif;
 	font-size: 16px;
 }
+*/
 .fz-14{
 	font-size: 14px;
 }
