@@ -132,12 +132,15 @@ img{
 .box-footer{
 	display: flex;
 	justify-content: space-between;
-	padding: 48px 0 24px;
+	padding: 48px 0 32px;
+	border-bottom: 1px solid #ffff;
+	margin-bottom: 32px;
 }
-.box-footer ul{
+.box-footer-r ul{
 	display: flex;
 	align-items: center;
 	font-size: 16px;
+	padding-bottom: 36px;
 }
 .box-footer img{
 	max-width: 48px;
@@ -148,9 +151,6 @@ img{
 }
 .box-link{
 	font-size: 36px;
-	padding-bottom: 32px;
-	border-bottom: 1px solid #ffff;
-	margin-bottom: 24px;
 }
 .fz-36{
 	font-size: 36px;
@@ -184,14 +184,25 @@ img{
 .pr-48{
 	padding-right: 48px;
 }
+.df{
+	display: flex;
+}
 @media (max-width: 768px) {
 	.container{
-		max-width: 696px;
+		width: 696px;
 	}
 }
 @media (max-width: 375px) {
 	.container{
-		max-width: 349px;
+		width: 349px;
 	}
-	
+	.box-header-ph{
+		display: none;
+	}
+	.button-h{
+		display: inline-block;
+	}
+	.box-footer-r ul{
+		display: none;
+	}
 }
