@@ -55,7 +55,12 @@ body{
 	font-weight: 500;
 }
 img{
+	max-width: 100%;
+	height: auto;
 	vertical-align: middle;
+}
+*, *::before, *::after{
+	box-sizing: border-box;
 }
 .image{
 	height: 958px;
@@ -67,14 +72,20 @@ img{
 }
 .df{
 	display: flex;
+}
+.flex-colum{
 	flex-direction: column;
+}
+.justify-cc{
 	justify-content: center;
+}
+.align-ic{
 	align-items: center;
 }
-.df-2{
-	display: flex;
-	justify-content: center;
+.flex-w{
+	flex-wrap: wrap;
 }
+
 .header{
 	color: #fff;
 	font-weight: 700;
@@ -92,6 +103,8 @@ img{
 .container{
 	width: 1200px;
 	margin: 0 auto;
+}
+.text-ac{
 	text-align: center;
 }
 .about{
@@ -102,7 +115,8 @@ img{
 }
 .list-1{
 	border-top: 1px solid #000;
-	margin: 0 408px;
+	display: inline-block;
+	/*移除margin: 0 408px; 加入display:inline-block; 變成行內區塊屬性*/
 	margin-top: 24px;
 	padding-top: 28px;
 }
@@ -206,4 +220,7 @@ img{
 }
 .mb-56{
 	padding-bottom: 56px;
+}
+.pr-24{
+	padding-right: 24px;
 }
