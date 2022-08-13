@@ -248,7 +248,12 @@ img{
 
 @media (max-width: 768px) {
 	.box-footer-r ul{
-		padding-bottom: 32px;
+		display: none;
+	}
+	.btw-footer{
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
 	.box-footer img{
 		max-width: 40px;
