@@ -136,12 +136,12 @@ img{
 	.box-header li{
 		margin: 0;
 		width: 50%;
+		border: 1px solid #ffff;
 	}
 	.box-header-ph{
-		display: inline-block;
+		display: block;
 		text-align: center;
 		padding: 12px 0;
-		border: 1px solid #ffff;
 	}
 }
 
